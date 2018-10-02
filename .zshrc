@@ -37,3 +37,4 @@ export GPG_TTY=$(tty)
 source /usr/share/nvm/init-nvm.sh
 
 compdef _pacman bb-wrapper=pacman
+compdef _pacman yay=pacman
