@@ -1,45 +1,6 @@
 <monitors version="2">
   <configuration>
     <logicalmonitor>
-      <x>0</x>
-      <y>0</y>
-      <scale>1</scale>
-      <monitor>
-        <monitorspec>
-          <connector>HDMI-1-1</connector>
-          <vendor>DEL</vendor>
-          <product>DELL U2515H</product>
-          <serial>9X2VY54H0G3L</serial>
-        </monitorspec>
-        <mode>
-          <width>2560</width>
-          <height>1440</height>
-          <rate>59.950550079345703</rate>
-        </mode>
-      </monitor>
-    </logicalmonitor>
-    <logicalmonitor>
-      <x>336</x>
-      <y>1440</y>
-      <scale>1</scale>
-      <primary>yes</primary>
-      <monitor>
-        <monitorspec>
-          <connector>eDP-1-1</connector>
-          <vendor>AUO</vendor>
-          <product>0x38ed</product>
-          <serial>0x00000000</serial>
-        </monitorspec>
-        <mode>
-          <width>1920</width>
-          <height>1080</height>
-          <rate>60.052440643310547</rate>
-        </mode>
-      </monitor>
-    </logicalmonitor>
-  </configuration>
-  <configuration>
-    <logicalmonitor>
       <x>312</x>
       <y>1440</y>
       <scale>1</scale>
@@ -73,6 +34,27 @@
           <width>2560</width>
           <height>1440</height>
           <rate>59.9510498046875</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>eDP-1-1</connector>
+          <vendor>AUO</vendor>
+          <product>0x38ed</product>
+          <serial>0x00000000</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.052440643310547</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -137,6 +119,45 @@
     </logicalmonitor>
   </configuration>
   <configuration>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>HDMI-1-1</connector>
+          <vendor>DEL</vendor>
+          <product>DELL U2515H</product>
+          <serial>9X2VY54H0G3L</serial>
+        </monitorspec>
+        <mode>
+          <width>2560</width>
+          <height>1440</height>
+          <rate>59.950550079345703</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>336</x>
+      <y>1440</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>eDP-1-1</connector>
+          <vendor>AUO</vendor>
+          <product>0x38ed</product>
+          <serial>0x00000000</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.052440643310547</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
     <migrated/>
     <logicalmonitor>
       <x>0</x>
@@ -170,27 +191,6 @@
           <width>1920</width>
           <height>1080</height>
           <rate>60.052936553955078</rate>
-        </mode>
-      </monitor>
-    </logicalmonitor>
-  </configuration>
-  <configuration>
-    <logicalmonitor>
-      <x>0</x>
-      <y>0</y>
-      <scale>1</scale>
-      <primary>yes</primary>
-      <monitor>
-        <monitorspec>
-          <connector>eDP-1-1</connector>
-          <vendor>AUO</vendor>
-          <product>0x38ed</product>
-          <serial>0x00000000</serial>
-        </monitorspec>
-        <mode>
-          <width>1920</width>
-          <height>1080</height>
-          <rate>60.052440643310547</rate>
         </mode>
       </monitor>
     </logicalmonitor>

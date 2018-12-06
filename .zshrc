@@ -7,10 +7,6 @@ antigen bundle git
 antigen bundle pep8
 antigen bundle pip
 
-antigen bundle rails
-antigen bundle ruby
-antigen bundle rvm
-
 antigen bundle adb
 
 antigen bundle archlinux
