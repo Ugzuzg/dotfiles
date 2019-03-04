@@ -30,7 +30,8 @@ alias diff='diff --color=auto'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 export GPG_TTY=$(tty)
-source /usr/share/nvm/init-nvm.sh
 
 compdef _pacman bb-wrapper=pacman
 compdef _pacman yay=pacman
+
+eval `fnm env --multi`

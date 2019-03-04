@@ -20,15 +20,21 @@ enable_vimfiler_gitstatus = true
 enable_os_fileformat_icon = true
 enable_neomake = false
 enable_ale = true
+lint_on_the_fly = true
 buffer_index_type = 4
 default_indent = 2
 bootstrap_after = "customise#after"
 
+[[layers]]
+name = "checkers"
 
 [[layers]]
 name = "autocomplete"
 auto-completion-return-key-behavior = "complete"
 auto-completion-tab-key-behavior = "cycle"
+
+[[layers]]
+name = "colorscheme"
 
 [[layers]]
 name = "shell"
@@ -81,6 +87,9 @@ name = "VersionControl"
 [[layers]]
 name = "denite"
 
+[[layers]]
+name = "sudo"
+
 
 [[custom_plugins]]
 name = "benjie/local-npm-bin.vim"
@@ -93,3 +102,9 @@ name = "martinda/Jenkinsfile-vim-syntax"
 
 [[custom_plugins]]
 name = "neoclide/vim-jsx-improve"
+
+[[custom_plugins]]
+name = "prettier/vim-prettier"
+
+[[custom_plugins]]
+name = "wakatime/vim-wakatime"
