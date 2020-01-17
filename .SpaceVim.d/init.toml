@@ -5,8 +5,8 @@
 # set spacevim theme. by default colorscheme layer is not loaded,
 # if you want to use more colorscheme, please load the colorscheme
 # layer, the value of this option is a string.
-colorscheme = "zenburn"
-colorscheme_bg = "dark"
+colorscheme = 'zenburn'
+colorscheme_bg = 'light'
 # Disable guicolors in basic mode, many terminal do not support 24bit
 # true colors, the type of the value is boolean, true or false.
 enable_guicolors = true
@@ -23,88 +23,91 @@ enable_ale = true
 lint_on_the_fly = true
 buffer_index_type = 4
 default_indent = 2
-bootstrap_after = "customise#after"
+bootstrap_before = 'customise#before'
+bootstrap_after = 'customise#after'
+statusline_separator = 'arrow'
+disabled_plugins = []
+
+# autocomplete configuration
+autocomplete_method = 'deoplete'
+autocomplete_parens = false
 
 [[layers]]
-name = "checkers"
+name = 'checkers'
 
 [[layers]]
-name = "autocomplete"
-auto-completion-return-key-behavior = "complete"
-auto-completion-tab-key-behavior = "cycle"
+name = 'autocomplete'
+auto-completion-return-key-behavior = 'complete'
+auto-completion-tab-key-behavior = 'cycle'
+auto_completion_complete_with_key_sequence = 'nil'
 
 [[layers]]
-name = "colorscheme"
+name = 'colorscheme'
 
 [[layers]]
-name = "shell"
-default_position = "top"
+name = 'shell'
+default_position = 'top'
 default_height = 30
 
 [[layers]]
-name = "lsp"
+name = 'lsp'
 filetypes = [
-  "javascript",
-  "typescript"
+  'javascript',
+  'typescript'
 ]
 
 [[layers]]
-name = "lang#python"
+name = 'lang#typescript'
 
 [[layers]]
-name = "lang#c"
+name = 'lang#javascript'
 
 [[layers]]
-name = "lang#typescript"
+name = 'lang#vue'
 
 [[layers]]
-name = "lang#vue"
+name = 'lang#html'
 
 [[layers]]
-name = "lang#html"
+name = 'lang#toml'
 
 [[layers]]
-name = "lang#clojure"
+name = 'lang#vim'
 
 [[layers]]
-name = "lang#toml"
+name = 'lang#xml'
 
 [[layers]]
-name = "lang#vim"
+name = 'lang#markdown'
 
 [[layers]]
-name = "lang#xml"
+name = 'operator'
 
 [[layers]]
-name = "operator"
+name = 'git'
+git-plugin = 'gina'
 
 [[layers]]
-name = "git"
+name = 'VersionControl'
 
 [[layers]]
-name = "VersionControl"
+name = 'denite'
 
 [[layers]]
-name = "denite"
-
-[[layers]]
-name = "sudo"
+name = 'sudo'
 
 
 [[custom_plugins]]
-name = "benjie/local-npm-bin.vim"
+name = 'benjie/local-npm-bin.vim'
 
 [[custom_plugins]]
-name = "jnurmine/Zenburn"
+name = 'jnurmine/Zenburn'
 
 [[custom_plugins]]
-name = "martinda/Jenkinsfile-vim-syntax"
+name = 'neoclide/vim-jsx-improve'
 
 [[custom_plugins]]
-name = "neoclide/vim-jsx-improve"
+name = 'prettier/vim-prettier'
 
 [[custom_plugins]]
-name = "prettier/vim-prettier"
-
-[[custom_plugins]]
-name = "wakatime/vim-wakatime"
+name = 'wakatime/vim-wakatime'

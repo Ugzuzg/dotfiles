@@ -22,7 +22,7 @@
   </configuration>
   <configuration>
     <logicalmonitor>
-      <x>328</x>
+      <x>357</x>
       <y>1440</y>
       <scale>1</scale>
       <primary>yes</primary>
@@ -55,6 +55,84 @@
           <width>2560</width>
           <height>1440</height>
           <rate>59.9510498046875</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <logicalmonitor>
+      <x>1511</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-3</connector>
+          <vendor>HPN</vendor>
+          <product>HP Z24n G2</product>
+          <serial>6CM91918S4</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1200</height>
+          <rate>59.950672149658203</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>0</x>
+      <y>1200</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>eDP-1</connector>
+          <vendor>SHP</vendor>
+          <product>0x149a</product>
+          <serial>0x00000000</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>59.999824523925781</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-3</connector>
+          <vendor>HPN</vendor>
+          <product>HP Z24n G2</product>
+          <serial>6CM91918GQ</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1200</height>
+          <rate>59.950672149658203</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>0</x>
+      <y>1200</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>eDP-1</connector>
+          <vendor>SHP</vendor>
+          <product>0x149a</product>
+          <serial>0x00000000</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>59.999824523925781</rate>
         </mode>
       </monitor>
     </logicalmonitor>

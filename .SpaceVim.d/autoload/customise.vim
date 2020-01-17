@@ -1,3 +1,7 @@
+function! customise#before() abort
+  let g:gruvbox_contrast_light="soft"
+endfunction
+
 function! customise#after() abort
   set list listchars=tab:»·,eol:¶,trail:·,extends:↷,precedes:↶
 
