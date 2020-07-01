@@ -22,10 +22,9 @@
   </configuration>
   <configuration>
     <logicalmonitor>
-      <x>357</x>
+      <x>300</x>
       <y>1440</y>
       <scale>1</scale>
-      <primary>yes</primary>
       <monitor>
         <monitorspec>
           <connector>eDP-1</connector>
@@ -44,6 +43,7 @@
       <x>0</x>
       <y>0</y>
       <scale>1</scale>
+      <primary>yes</primary>
       <monitor>
         <monitorspec>
           <connector>DP-3</connector>
@@ -94,6 +94,84 @@
           <width>1920</width>
           <height>1080</height>
           <rate>59.999824523925781</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>HDMI-1</connector>
+          <vendor>DEL</vendor>
+          <product>DELL U2515H</product>
+          <serial>9X2VY54H0G3L</serial>
+        </monitorspec>
+        <mode>
+          <width>2560</width>
+          <height>1440</height>
+          <rate>59.9510498046875</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>338</x>
+      <y>1440</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>eDP-1</connector>
+          <vendor>SHP</vendor>
+          <product>0x149a</product>
+          <serial>0x00000000</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>59.999824523925781</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <logicalmonitor>
+      <x>318</x>
+      <y>1440</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>eDP-1-1</connector>
+          <vendor>SHP</vendor>
+          <product>0x149a</product>
+          <serial>0x00000000</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>59.999324798583984</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>HDMI-0</connector>
+          <vendor>DEL</vendor>
+          <product>DELL U2515H</product>
+          <serial>9X2VY54H0G3L</serial>
+        </monitorspec>
+        <mode>
+          <width>2560</width>
+          <height>1440</height>
+          <rate>59.950550079345703</rate>
         </mode>
       </monitor>
     </logicalmonitor>
