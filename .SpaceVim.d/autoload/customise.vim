@@ -11,4 +11,5 @@ function! customise#after() abort
   \  'css': ['prettier'],
   \}
   " let g:ale_fix_on_save=1
+
 endfunction

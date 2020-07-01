@@ -6,7 +6,7 @@
 # if you want to use more colorscheme, please load the colorscheme
 # layer, the value of this option is a string.
 colorscheme = 'zenburn'
-colorscheme_bg = 'light'
+colorscheme_bg = 'dark'
 # Disable guicolors in basic mode, many terminal do not support 24bit
 # true colors, the type of the value is boolean, true or false.
 enable_guicolors = true
@@ -15,7 +15,7 @@ enable_guicolors = true
 enable_tabline_filetype_icon = true
 # Display current mode text on statusline, by default It is disabled,
 # only color will be changed when switch modes.
-enable_statusline_display_mode = false
+enable_statusline_display_mode = true
 enable_vimfiler_gitstatus = true
 enable_os_fileformat_icon = true
 enable_neomake = false
@@ -27,6 +27,7 @@ bootstrap_before = 'customise#before'
 bootstrap_after = 'customise#after'
 statusline_separator = 'arrow'
 disabled_plugins = []
+filemanager = 'defx'
 
 # autocomplete configuration
 autocomplete_method = 'deoplete'
@@ -67,6 +68,9 @@ name = 'lang#vue'
 
 [[layers]]
 name = 'lang#html'
+
+[[layers]]
+name = 'lang#rust'
 
 [[layers]]
 name = 'lang#toml'
