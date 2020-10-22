@@ -61,9 +61,6 @@ filetypes = [
 name = 'lang#typescript'
 
 [[layers]]
-name = 'lang#javascript'
-
-[[layers]]
 name = 'lang#vue'
 
 [[layers]]
@@ -115,3 +112,6 @@ name = 'prettier/vim-prettier'
 
 [[custom_plugins]]
 name = 'wakatime/vim-wakatime'
+
+[[custom_plugins]]
+name = 'jceb/vim-orgmode'
