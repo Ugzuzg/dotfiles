@@ -1,5 +1,17 @@
+function! ChangeBackground()
+  if system("gsettings get org.gnome.desktop.interface gtk-theme") =~ "Arc-Dark"
+    set background=dark   " for the dark version of the theme
+    let g:spacevim_colorscheme = 'zenburn'
+  else
+    set background=light  " for the light version of the theme
+    let g:spacevim_colorscheme = 'NeoSolarized'
+  endif
+
+  exe 'colorscheme ' . g:spacevim_colorscheme
+  syntax on
+endfunction
+
 function! customise#before() abort
-  let g:gruvbox_contrast_light="soft"
 endfunction
 
 function! customise#after() abort
@@ -19,4 +31,6 @@ function! customise#after() abort
   let g:org_heading_shade_leading_stars=0
   let g:org_indent=1
 
+  call timer_start(0, { tid -> ChangeBackground() })
+  autocmd Signal SIGUSR1 call timer_start(0, { tid -> ChangeBackground() })
 endfunction

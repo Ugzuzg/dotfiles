@@ -39,7 +39,7 @@ compdef _pacman yay=pacman
 zstyle ':completion:*' rehash true
 zstyle ':completion::complete:*' gain-privileges 1
 
-eval "`fnm env --multi --use-on-cd`"
+eval "`fnm env --use-on-cd`"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 

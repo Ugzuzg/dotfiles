@@ -115,3 +115,10 @@ name = 'wakatime/vim-wakatime'
 
 [[custom_plugins]]
 name = 'jceb/vim-orgmode'
+
+[[custom_plugins]]
+name = 'tonchis/vim-to-github'
+
+#[[custom_plugins]]
+#name = 'tbodt/deoplete-tabnine'
+#build = './install.sh'

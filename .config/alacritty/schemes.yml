@@ -1,0 +1,146 @@
+schemes:
+  # Base16 Solarized Light 256 - alacritty color config
+  # Ethan Schoonover (modified by aramisgithub)
+  solarized_light: &solarized_light
+    # Default colors
+    primary:
+      background: '0xfdf6e3'
+      foreground: '0x586e75'
+
+    search:
+      bar:
+        background: '0xfdf6e3'
+        foreground: '0x586e75'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '0xfdf6e3'
+      cursor: '0x586e75'
+
+    # Normal colors
+    normal:
+      black:   '0xfdf6e3'
+      red:     '0xdc322f'
+      green:   '0x859900'
+      yellow:  '0xb58900'
+      blue:    '0x268bd2'
+      magenta: '0x6c71c4'
+      cyan:    '0x2aa198'
+      white:   '0x586e75'
+
+    # Bright colors
+    bright:
+      black:   '0x839496'
+      red:     '0xdc322f'
+      green:   '0x859900'
+      yellow:  '0xb58900'
+      blue:    '0x268bd2'
+      magenta: '0x6c71c4'
+      cyan:    '0x2aa198'
+      white:   '0x002b36'
+
+    indexed_colors:
+      - { index: 16, color: '0xcb4b16' }
+      - { index: 17, color: '0xd33682' }
+      - { index: 18, color: '0xeee8d5' }
+      - { index: 19, color: '0x93a1a1' }
+      - { index: 20, color: '0x657b83' }
+      - { index: 21, color: '0x073642' }
+
+  # Base16 Gruvbox light, soft 256 - alacritty color config
+  # Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+  gruvbox_light: &gruvbox_light
+    # Default colors
+    primary:
+      background: '0xf2e5bc'
+      foreground: '0x504945'
+
+    search:
+      bar:
+        background: '0xf2e5bc'
+        foreground: '0x504945'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '0xf2e5bc'
+      cursor: '0x504945'
+
+    # Normal colors
+    normal:
+      black:   '0xf2e5bc'
+      red:     '0x9d0006'
+      green:   '0x79740e'
+      yellow:  '0xb57614'
+      blue:    '0x076678'
+      magenta: '0x8f3f71'
+      cyan:    '0x427b58'
+      white:   '0x504945'
+
+    # Bright colors
+    bright:
+      black:   '0xbdae93'
+      red:     '0x9d0006'
+      green:   '0x79740e'
+      yellow:  '0xb57614'
+      blue:    '0x076678'
+      magenta: '0x8f3f71'
+      cyan:    '0x427b58'
+      white:   '0x282828'
+
+    indexed_colors:
+      - { index: 16, color: '0xaf3a03' }
+      - { index: 17, color: '0xd65d0e' }
+      - { index: 18, color: '0xebdbb2' }
+      - { index: 19, color: '0xd5c4a1' }
+      - { index: 20, color: '0x665c54' }
+      - { index: 21, color: '0x3c3836' }
+
+  # Base16 Zenburn 256 - alacritty color config
+  # elnawe
+  zenburn: &zenburn
+    # Default colors
+    primary:
+      background: '0x383838'
+      foreground: '0xdcdccc'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '0x383838'
+      cursor: '0xdcdccc'
+
+    search:
+      bar:
+        background: '0x383838'
+        foreground: '0xdcdccc'
+
+    # Normal colors
+    normal:
+      black:   '0x383838'
+      red:     '0xdca3a3'
+      green:   '0x5f7f5f'
+      yellow:  '0xe0cf9f'
+      blue:    '0x7cb8bb'
+      magenta: '0xdc8cc3'
+      cyan:    '0x93e0e3'
+      white:   '0xdcdccc'
+
+    # Bright colors
+    bright:
+      black:   '0x6f6f6f'
+      red:     '0xdca3a3'
+      green:   '0x5f7f5f'
+      yellow:  '0xe0cf9f'
+      blue:    '0x7cb8bb'
+      magenta: '0xdc8cc3'
+      cyan:    '0x93e0e3'
+      white:   '0xffffff'
+
+    indexed_colors:
+      - { index: 16, color: '0xdfaf8f' }
+      - { index: 17, color: '0x000000' }
+      - { index: 18, color: '0x404040' }
+      - { index: 19, color: '0x606060' }
+      - { index: 20, color: '0x808080' }
+      - { index: 21, color: '0xc0c0c0' }
+
+colors: *solarized_light
