@@ -4,7 +4,7 @@ function! ChangeBackground()
     let g:spacevim_colorscheme = 'zenburn'
   else
     set background=light  " for the light version of the theme
-    let g:spacevim_colorscheme = 'NeoSolarized'
+    let g:spacevim_colorscheme = 'one'
   endif
 
   exe 'colorscheme ' . g:spacevim_colorscheme

@@ -7,7 +7,7 @@ case $1 in
     ;;
   light)
     echo "light"
-    alacritty-theme solarized_light
+    alacritty-theme one
     ;;
 esac
 
