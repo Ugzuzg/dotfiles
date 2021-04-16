@@ -16,6 +16,7 @@ endfunction
 
 function! customise#after() abort
   set list listchars=tab:»·,eol:¶,trail:·,extends:↷,precedes:↶
+  set title
 
   let g:vimfiler_quick_look_command='preview'
   let g:ale_linters = {
