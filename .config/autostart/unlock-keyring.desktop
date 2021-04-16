@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Unlock Keyring
+GenericName=Unlock Keyring
+Comment=Unlock Keyring
+Icon=org.gnome.seahorse.Application
+Categories=Network;
+Exec=/home/ugzuzg/.local/bin/unlock-keyring.sh
+Terminal=false
+X-GNOME-Autostart-Enabled=true

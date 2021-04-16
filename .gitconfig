@@ -1,0 +1,15 @@
+[user]
+	email = ugzuzg@gmail.com
+	name = Jarasłaŭ Viktorčyk
+	signingkey = BD8074BB4BF68C8C
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = true
+[gpg]
+	program = gpg
