@@ -22,6 +22,8 @@ function! customise#after() abort
   let g:org_heading_shade_leading_stars=0
   let g:org_indent=1
 
+  let g:neomake_open_list = 0
+
   call timer_start(0, { tid -> ChangeBackground() })
   autocmd Signal SIGUSR1 call timer_start(0, { tid -> ChangeBackground() })
 endfunction
