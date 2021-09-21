@@ -40,6 +40,7 @@ zstyle ':completion:*' rehash true
 zstyle ':completion::complete:*' gain-privileges 1
 
 eval "`fnm env --use-on-cd`"
+eval "$(zoxide init zsh)"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
