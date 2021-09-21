@@ -190,4 +190,4 @@ schemes:
       - { index: 20, color: '0x808080' }
       - { index: 21, color: '0xc0c0c0' }
 
-colors: *one
+colors: *zenburn
