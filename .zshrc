@@ -34,6 +34,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 export GPG_TTY=$(tty)
 
 compdef _pacman yay=pacman
+compdef _pacman paru=pacman
 
 # auto rehash on completion
 zstyle ':completion:*' rehash true
