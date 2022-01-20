@@ -28,13 +28,17 @@ bootstrap_before = 'customise#before'
 bootstrap_after = 'customise#after'
 
 statusline_separator = 'arrow'
-disabled_plugins = []
+disabled_plugins = ['indent-blankline.nvim']
 
 filemanager = 'defx'
 
 # autocomplete configuration
 autocomplete_method = 'deoplete'
 autocomplete_parens = false
+
+[[layers]]
+name ='ui'
+enable_indentline = false
 
 [[layers]]
 name = 'checkers'
@@ -64,6 +68,7 @@ filetypes = [
 [layers.override_cmd]
 javascript = ['typescript-language-server', '--stdio']
 javascriptreact = ['typescript-language-server', '--stdio']
+typescript = ['typescript-language-server', '--stdio']
 typescriptreact = ['typescript-language-server', '--stdio']
 
 [[layers]]
