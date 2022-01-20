@@ -14,7 +14,6 @@ antigen bundle archlinux
 antigen bundle node
 antigen bundle npm
 antigen bundle yarn
-antigen bundle rvm
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
@@ -30,6 +29,9 @@ antigen apply
 alias ip='ip --color'
 alias diff='diff --color=auto'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias cat='bat'
+alias ls='exa'
+alias cd='z'
 
 export GPG_TTY=$(tty)
 
@@ -42,6 +44,3 @@ zstyle ':completion::complete:*' gain-privileges 1
 
 eval "`fnm env --use-on-cd`"
 eval "$(zoxide init zsh)"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
