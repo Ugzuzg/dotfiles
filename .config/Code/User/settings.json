@@ -83,5 +83,6 @@
     "tabnine.experimentalAutoImports": true,
     "workbench.preferredDarkColorTheme": "Zenburn",
     "workbench.preferredLightColorTheme": "Atom One Light",
-    "window.autoDetectColorScheme": true
+    "window.autoDetectColorScheme": true,
+    "jupyter.askForKernelRestart": false
 }
