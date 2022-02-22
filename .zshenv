@@ -1,3 +1,8 @@
+export EDITOR=nvim
+export BROWSER=firefox-nightly
+export DOCKER_BUILDKIT=1
+export COMPOSE_DOCKER_CLI_BUILD=1
+
 dotenv() {
   env $(grep -v '^#' $1 | xargs -d '\n') $@[2,-1]
 }
