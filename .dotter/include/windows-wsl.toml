@@ -1,0 +1,6 @@
+[vscode.files]
+"vscode/settings.json" = "/mnt/c/Users/JVIKTORC/AppData/Roaming/Code/User/settings.json"
+
+[alacritty.files]
+"alacritty/alacritty.yml" = { target = "/mnt/c/Users/JVIKTORC/AppData/Roaming/alacritty/alacritty.yml", type = "template" }
+"alacritty/schemes.yml" = { target = "/mnt/c/Users/JVIKTORC/AppData/Roaming/alacritty/schemes.yml", type = "template" }

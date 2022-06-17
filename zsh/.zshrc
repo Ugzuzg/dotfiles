@@ -49,6 +49,10 @@ if command -v kubectl &> /dev/null ; then
   source <(kubectl completion zsh)
 fi
 
+if command -v helm &> /dev/null ; then
+  source <(helm completion zsh)
+fi
+
 # check if in WSL
 if grep -qEi "(Microsoft|WSL)" /proc/version &> /dev/null ; then
   # WSL2 gpg setup
