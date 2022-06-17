@@ -1,0 +1,40 @@
+[git.files]
+"git/.gitconfig" = "~/.gitconfig"
+
+[zsh.files]
+"zsh/.zshrc" = "~/.zshrc"
+"zsh/.zshenv" = "~/.zshenv"
+
+[alacritty.files]
+"alacritty/alacritty.yml" = { target = "~/.config/alacritty/alacritty.yml", type = "template" }
+"alacritty/schemes.yml" = "~/.config/alacritty/schemes.yml"
+
+[gnome.files]
+"gnome/monitors.xml" = "~/.config/monitors.xml"
+"gnome/autostart/unlock-keyring.desktop" = "~/.config/autostart/unlock-keyring.desktop"
+"gnome/bin/unlock-keyring.sh" = "~/.local/bin/unlock-keyring.sh"
+"gnome/bin/checkupdates.sh" = "~/.local/bin/checkupdates.sh"
+# TODO: split switch-theme
+"gnome/bin/switch-theme.zsh" = "~/.local/bin/switch-theme.zsh"
+
+[vscode.files]
+"vscode/settings.json" = "~/.config/Code/User/settings.json"
+
+[htop.files]
+"htop/htoprc" = "~/.config/htop/htoprc"
+
+[paru.files]
+"paru/paru.conf" = "~/.config/paru/paru.conf"
+
+[nvim.files]
+"nvim/.SpaceVim.d/init.toml" = "~/.SpaceVim.d/init.toml"
+"nvim/.SpaceVim.d/autoload/customise.vim" = "~/.SpaceVim.d/autoload/customise.vim"
+
+[tmux.files]
+"tmux/tmux.conf" = { target = "~/.config/tmux/tmux.conf", type = "template" }
+
+[volvo]
+depends = ["git"]
+
+[volvo.files]
+"git/volvo/.gitconfig" = "~/volvo/.gitconfig"

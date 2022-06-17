@@ -28,7 +28,6 @@ antigen apply
 
 alias ip='ip --color'
 alias diff='diff --color=auto'
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias cat='bat'
 alias ls='exa'
 alias cd='z'
@@ -47,6 +46,10 @@ eval "$(zoxide init zsh)"
 
 if command -v kubectl &> /dev/null ; then
   source <(kubectl completion zsh)
+fi
+
+if command -v helm &> /dev/null ; then
+  source <(helm completion zsh)
 fi
 
 # check if in WSL
