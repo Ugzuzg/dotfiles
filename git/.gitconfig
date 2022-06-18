@@ -13,3 +13,5 @@
 	rebase = true
 [gpg]
 	program = gpg
+[includeIf "gitdir:~/volvo/"]
+	path = ~/volvo/.gitconfig
