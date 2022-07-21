@@ -26,6 +26,8 @@ antigen apply
 
 # setopt extended_glob
 
+autoload -U zmv
+
 alias ip='ip --color'
 alias diff='diff --color=auto'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -34,9 +36,6 @@ alias ls='exa'
 alias cd='z'
 
 export GPG_TTY=$(tty)
-
-compdef _pacman yay=pacman
-compdef _pacman paru=pacman
 
 # auto rehash on completion
 zstyle ':completion:*' rehash true
