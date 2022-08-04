@@ -41,7 +41,9 @@ compdef _pacman paru=pacman
 zstyle ':completion:*' rehash true
 zstyle ':completion::complete:*' gain-privileges 1
 
-eval "`fnm env --use-on-cd`"
+if command -v kubectl &> /dev/null ; then
+  eval "`fnm env --use-on-cd`"
+fi
 eval "$(zoxide init zsh)"
 
 if command -v kubectl &> /dev/null ; then

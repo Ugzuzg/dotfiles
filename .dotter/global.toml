@@ -38,3 +38,7 @@ depends = ["git"]
 
 [volvo.files]
 "git/volvo/.gitconfig" = "~/volvo/.gitconfig"
+
+[deck.files]
+"deck/setup.sh" = "~/.local/bin/deck-setup.sh"
+"deck/setup.desktop" = "~/Desktop/deck-setup.desktop"
