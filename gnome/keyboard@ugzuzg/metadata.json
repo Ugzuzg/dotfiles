@@ -1,0 +1,9 @@
+{
+  "name": "Keyboard Layout switcher",
+  "description": "Move and resize windows",
+  "uuid": "keyboard@ugzuzg",
+  "shell-version": [
+    "41",
+    "42"
+  ]
+}

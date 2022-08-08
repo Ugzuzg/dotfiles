@@ -16,6 +16,8 @@
 "gnome/bin/checkupdates.sh" = "~/.local/bin/checkupdates.sh"
 # TODO: split switch-theme
 "gnome/bin/switch-theme.zsh" = "~/.local/bin/switch-theme.zsh"
+"gnome/keyboard@ugzuzg/extension.js" = "~/.local/share/gnome-shell/extensions/keyboard@ugzuzg/extension.js"
+"gnome/keyboard@ugzuzg/metadata.json" = "~/.local/share/gnome-shell/extensions/keyboard@ugzuzg/metadata.json"
 
 [vscode.files]
 "vscode/settings.json" = "~/.config/Code/User/settings.json"
