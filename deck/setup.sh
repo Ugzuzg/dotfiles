@@ -24,8 +24,9 @@ yay -Sy --noconfirm --needed --overwrite '*' \
     rustup \
     lib32-freetype2 \
     fakeroot p7zip unrar \
-    steam-boilr-gui itch-bin antigen
+    steam-boilr-gui itch-bin antigen \
+    nvim dotter-rs-bin
 
 sudo usermod -s /bin/zsh deck
 
-sudo steamos-readonly enable
+# sudo steamos-readonly enable
