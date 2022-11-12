@@ -8,7 +8,7 @@ schemes:
       foreground: '0x383a42'
 
     search:
-      bar:
+      footer_bar:
         background: '0xfafafa'
         foreground: '0x383a42'
 
@@ -55,7 +55,7 @@ schemes:
       foreground: '0x586e75'
 
     search:
-      bar:
+      footer_bar:
         background: '0xfdf6e3'
         foreground: '0x586e75'
 
@@ -103,7 +103,7 @@ schemes:
       foreground: '0x504945'
 
     search:
-      bar:
+      footer_bar:
         background: '0xf2e5bc'
         foreground: '0x504945'
 
@@ -156,7 +156,7 @@ schemes:
       cursor: '0xdcdccc'
 
     search:
-      bar:
+      footer_bar:
         background: '0x383838'
         foreground: '0xdcdccc'
 
