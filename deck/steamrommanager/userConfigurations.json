@@ -1,0 +1,198 @@
+[
+    {
+        "parserType": "Glob-regex",
+        "configTitle": "Shell runners",
+        "steamCategory": "${${/(?:.*\\/)*/([^\\/\\.]+)\\/[^\\/]*\\.sh/|${exePath}}}",
+        "steamDirectory": "${steamdirglobal}",
+        "romDirectory": "/home/deck/Games/.bin",
+        "executableArgs": "",
+        "executableModifier": "\"${exePath}\"",
+        "startInDirectory": "",
+        "titleModifier": "${fuzzyTitle}",
+        "imageProviders": [
+            "SteamGridDB"
+        ],
+        "onlineImageQueries": "${${fuzzyTitle}}",
+        "imagePool": "${fuzzyTitle}",
+        "defaultImage": "",
+        "defaultTallImage": "",
+        "defaultHeroImage": "",
+        "defaultLogoImage": "",
+        "defaultIcon": "",
+        "localImages": "/home/deck/Games/.images/${title}/header.jpg",
+        "localTallImages": "/home/deck/Games/.images/${title}/library_600x900.jpg",
+        "localHeroImages": "/home/deck/Games/.images/${title}/library_hero.jpg",
+        "localLogoImages": "/home/deck/Games/.images/${title}/logo.png",
+        "localIcons": "/home/deck/Games/.images/${title}/icon.ico",
+        "userAccounts": {
+            "specifiedAccounts": "",
+            "skipWithMissingDataDir": true,
+            "useCredentials": true
+        },
+        "executable": {
+            "path": "",
+            "shortcutPassthrough": true,
+            "appendArgsToExecutable": true
+        },
+        "parserInputs": {
+            "glob-regex": "**/${/^([^\\.].*).sh$/}"
+        },
+        "titleFromVariable": {
+            "limitToGroups": "$1",
+            "caseInsensitiveVariables": false,
+            "skipFileIfVariableWasNotFound": false,
+            "tryToMatchTitle": false
+        },
+        "fuzzyMatch": {
+            "replaceDiacritics": true,
+            "removeCharacters": true,
+            "removeBrackets": true
+        },
+        "parserId": "164882672332884104",
+        "version": 10,
+        "imageProviderAPIs": {
+            "SteamGridDB": {
+                "nsfw": false,
+                "humor": false,
+                "imageMotionTypes": [
+                    "static"
+                ],
+                "styles": [],
+                "stylesHero": [],
+                "stylesLogo": [],
+                "stylesIcon": []
+            }
+        }
+    },
+    {
+        "parserType": "Glob",
+        "configTitle": "Tools",
+        "steamCategory": "${Tools}",
+        "executableArgs": "",
+        "executableModifier": "\"${exePath}\"",
+        "romDirectory": "/home/deck/.bin/tools",
+        "steamDirectory": "${steamdirglobal}",
+        "startInDirectory": "",
+        "imageProviders": [
+            "SteamGridDB"
+        ],
+        "titleModifier": "${fuzzyTitle}",
+        "onlineImageQueries": "${${fuzzyTitle}}",
+        "imagePool": "${fuzzyTitle}",
+        "defaultImage": "",
+        "defaultTallImage": "",
+        "defaultHeroImage": "",
+        "defaultLogoImage": "",
+        "defaultIcon": "",
+        "localImages": "/home/deck/Games/.images/${title}/header.jpg",
+        "localTallImages": "/home/deck/Games/.images/${title}/library_600x900.jpg",
+        "localHeroImages": "/home/deck/Games/.images/${title}/library_hero.jpg",
+        "localLogoImages": "/home/deck/Games/.images/${title}/logo.png",
+        "localIcons": "/home/deck/Games/.images/${title}/icon.ico",
+        "disabled": false,
+        "executable": {
+            "path": "",
+            "shortcutPassthrough": true,
+            "appendArgsToExecutable": true
+        },
+        "userAccounts": {
+            "specifiedAccounts": "",
+            "skipWithMissingDataDir": true,
+            "useCredentials": true
+        },
+        "parserInputs": {
+            "glob": "**/${title}@(.sh)"
+        },
+        "titleFromVariable": {
+            "limitToGroups": "",
+            "caseInsensitiveVariables": false,
+            "skipFileIfVariableWasNotFound": false,
+            "tryToMatchTitle": false
+        },
+        "fuzzyMatch": {
+            "replaceDiacritics": true,
+            "removeCharacters": true,
+            "removeBrackets": true
+        },
+        "parserId": "165175551262813248",
+        "version": 10,
+        "imageProviderAPIs": {
+            "SteamGridDB": {
+                "nsfw": false,
+                "humor": false,
+                "imageMotionTypes": [
+                    "static"
+                ],
+                "styles": [],
+                "stylesHero": [],
+                "stylesLogo": [],
+                "stylesIcon": []
+            }
+        }
+    },
+    {
+        "parserType": "itch.io",
+        "configTitle": "itch.io",
+        "steamCategory": "${itch}",
+        "steamDirectory": "/home/deck/.steam/steam",
+        "romDirectory": "",
+        "executableArgs": "",
+        "executableModifier": "\"${exePath}\"",
+        "startInDirectory": "",
+        "titleModifier": "${fuzzyTitle}",
+        "imageProviders": [
+            "SteamGridDB"
+        ],
+        "onlineImageQueries": "${${fuzzyTitle}}",
+        "imagePool": "${fuzzyTitle}",
+        "defaultImage": "",
+        "defaultTallImage": "",
+        "defaultHeroImage": "",
+        "defaultLogoImage": "",
+        "defaultIcon": "",
+        "localImages": "",
+        "localTallImages": "",
+        "localHeroImages": "",
+        "localLogoImages": "",
+        "localIcons": "",
+        "userAccounts": {
+            "specifiedAccounts": "",
+            "skipWithMissingDataDir": true,
+            "useCredentials": true
+        },
+        "executable": {
+            "path": "",
+            "shortcutPassthrough": false,
+            "appendArgsToExecutable": true
+        },
+        "parserInputs": {
+            "itchIoAppDataOverride": null
+        },
+        "titleFromVariable": {
+            "limitToGroups": "",
+            "caseInsensitiveVariables": false,
+            "skipFileIfVariableWasNotFound": false,
+            "tryToMatchTitle": false
+        },
+        "fuzzyMatch": {
+            "replaceDiacritics": true,
+            "removeCharacters": true,
+            "removeBrackets": true
+        },
+        "imageProviderAPIs": {
+            "SteamGridDB": {
+                "nsfw": false,
+                "humor": false,
+                "styles": [],
+                "stylesHero": [],
+                "stylesLogo": [],
+                "stylesIcon": [],
+                "imageMotionTypes": [
+                    "static"
+                ]
+            }
+        },
+        "parserId": "16585866433194592",
+        "version": 10
+    }
+]

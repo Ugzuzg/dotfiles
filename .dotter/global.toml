@@ -41,6 +41,18 @@ depends = ["git"]
 [volvo.files]
 "git/volvo/.gitconfig" = "~/volvo/.gitconfig"
 
+[steamrommanager.files]
+"deck/steamrommanager/userConfigurations.json" = "~/.config/steam-rom-manager/userData/userConfigurations.json"
+"deck/steamrommanager/userSettings.json" = "~/.config/steam-rom-manager/userData/userSettings.json"
+
+[deck]
+depends = ["steamrommanager"]
+
 [deck.files]
 "deck/setup.sh" = "~/.local/bin/deck-setup.sh"
 "deck/setup.desktop" = "~/Desktop/deck-setup.desktop"
+"deck/Tools/Firefox.sh" = "~/Games/.bin/Tools/Firefox.sh"
+"deck/Tools/Jellyfin.sh" = "~/Games/.bin/Tools/Jellyfin.sh"
+"deck/Tools/Itch.sh" = "~/Games/.bin/Tools/Itch.sh"
+"deck/Tools/SteamRomManager.sh" = "~/Games/.bin/Tools/SteamRomManager.sh"
+"deck/Tools/Konsole.sh" = "~/Games/.bin/Tools/Konsole.sh"
