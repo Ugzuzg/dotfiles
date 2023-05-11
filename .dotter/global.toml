@@ -29,8 +29,7 @@
 "paru/paru.conf" = "~/.config/paru/paru.conf"
 
 [nvim.files]
-"nvim/.SpaceVim.d/init.toml" = "~/.SpaceVim.d/init.toml"
-"nvim/.SpaceVim.d/autoload/customise.vim" = "~/.SpaceVim.d/autoload/customise.vim"
+"nvim" = "~/.config/nvim"
 
 [tmux.files]
 "tmux/tmux.conf" = { target = "~/.config/tmux/tmux.conf", type = "template" }
