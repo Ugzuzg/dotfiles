@@ -6,7 +6,7 @@ sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo pacman-key --populate holo
 
-sudo sed -i -E 's/\[(jupiter|holo|core|extra|community|multilib)\]/[\1-main]/g' /etc/pacman.conf
+#sudo sed -i -E 's/\[(jupiter|holo|core|extra|community|multilib)-rel\]/[\1-main]/g' /etc/pacman.conf
 
 if ! grep -qe "heftig" /etc/pacman.conf; then
   cat <<EOF | sudo tee -a /etc/pacman.conf
@@ -18,7 +18,7 @@ EOF
 fi
 
 paru -Sy --noconfirm archlinux-keyring
-paru -S --noconfirm openssl --overwrite '*'
+# paru -S --noconfirm openssl openssl-1.1 --overwrite '*'
 
 paru -S --noconfirm --needed --overwrite '*' \
     zsh zoxide bat tmux base-devel exa \
