@@ -1,3 +1,4 @@
 return {
-  "rhaiscript/vim-rhai",
+  { "rhaiscript/vim-rhai" },
+  { "phha/zenburn.nvim" },
 }

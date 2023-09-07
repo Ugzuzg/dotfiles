@@ -30,7 +30,7 @@ alias ip='ip --color'
 alias diff='diff --color=auto'
 alias cat='bat'
 alias ls='exa'
-alias cd='z'
+#alias cd='z'
 
 export GPG_TTY=$(tty)
 

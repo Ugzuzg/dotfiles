@@ -6,11 +6,10 @@
 "zsh/.zshenv" = "~/.zshenv"
 
 [alacritty.files]
-"alacritty/alacritty.yml" = { target = "~/.config/alacritty/alacritty.yml", type = "template" }
+"alacritty/alacritty.yml" = "~/.config/alacritty/alacritty.yml"
 "alacritty/schemes.yml" = "~/.config/alacritty/schemes.yml"
 
 [gnome.files]
-"gnome/monitors.xml" = "~/.config/monitors.xml"
 "gnome/autostart/unlock-keyring.desktop" = "~/.config/autostart/unlock-keyring.desktop"
 "gnome/bin/unlock-keyring.sh" = "~/.local/bin/unlock-keyring.sh"
 "gnome/bin/checkupdates.sh" = "~/.local/bin/checkupdates.sh"
