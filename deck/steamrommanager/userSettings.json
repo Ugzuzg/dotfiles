@@ -12,7 +12,8 @@
 		"retroarchPath": "/home/deck/.steam/steam/steamapps/common/RetroArch/retroarch",
 		"raCoresDirectory": "/home/deck/.steam/steam/steamapps/common/RetroArch/cores",
 		"localImagesDirectory": "/home/deck/Games/.images",
-		"romsDirectory": ""
+		"romsDirectory": "",
+		"userAccounts": ""
 	},
 	"previewSettings": {
 		"retrieveCurrentSteamImages": true,
@@ -23,9 +24,11 @@
 	"enabledProviders": [
 		"SteamGridDB"
 	],
-	"language": "English",
+	"language": "en-US",
 	"offlineMode": false,
-	"navigationWidth": 40,
+	"navigationWidth": 187,
 	"clearLogOnTest": false,
-	"version": 3
+	"version": 6,
+	"theme": "Deck",
+	"batchDownloadSize": 50
 }

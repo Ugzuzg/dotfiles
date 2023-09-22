@@ -9,7 +9,7 @@ sudo pacman-key --populate holo
 #sudo sed -i -E 's/\[(jupiter|holo|core|extra|community|multilib)-rel\]/[\1-main]/g' /etc/pacman.conf
 
 if ! grep -qe "heftig" /etc/pacman.conf; then
-  cat <<EOF | sudo tee -a /etc/pacman.conf
+	cat <<EOF | sudo tee -a /etc/pacman.conf
 
 [heftig]
 SigLevel = Optional
@@ -21,13 +21,15 @@ paru -Sy --noconfirm archlinux-keyring
 # paru -S --noconfirm openssl openssl-1.1 --overwrite '*'
 
 paru -S --noconfirm --needed --overwrite '*' \
-    zsh zoxide bat tmux base-devel exa \
-    rustup \
-    lib32-freetype2 \
-    fakeroot p7zip unrar \
-    steam-boilr-gui antigen \
-    neovim dotter-rs-bin \
-    firefox-nightly
+	zsh zoxide bat tmux base-devel glibc eza \
+	rustup \
+	lib32-freetype2 \
+	fakeroot p7zip unrar \
+	antigen \
+	lutris \
+	neovim \
+	dotter-rs-bin \
+	firefox-nightly
 
 sudo usermod -s /bin/zsh deck
 
@@ -35,13 +37,11 @@ sudo usermod -s /bin/zsh deck
 
 # Install flatpaks
 flatpak install --noninteractive --or-update flathub \
-    `# Apps` \
-    com.bitwarden.desktop \
-    com.discordapp.Discord \
-    com.github.iwalton3.jellyfin-media-player \
-    com.steamgriddb.steam-rom-manager \
-    com.github.tchx84.Flatseal \
-    net.davidotek.pupgui2 \
-    org.gnome.Platform.Compat.i386//43
-flatpak install --noninteractive --or-update flathub-beta \
-    net.lutris.Lutris
+	`# Apps` \
+	com.bitwarden.desktop \
+	com.discordapp.Discord \
+	com.github.iwalton3.jellyfin-media-player \
+	com.steamgriddb.steam-rom-manager \
+	com.github.tchx84.Flatseal \
+	net.davidotek.pupgui2 \
+	org.gnome.Platform.Compat.i386//43

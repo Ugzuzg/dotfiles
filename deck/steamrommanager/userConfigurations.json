@@ -14,20 +14,8 @@
         ],
         "onlineImageQueries": "${${fuzzyTitle}}",
         "imagePool": "${fuzzyTitle}",
-        "defaultImage": "",
-        "defaultTallImage": "",
-        "defaultHeroImage": "",
-        "defaultLogoImage": "",
-        "defaultIcon": "",
-        "localImages": "/home/deck/Games/.images/${title}/header.jpg",
-        "localTallImages": "/home/deck/Games/.images/${title}/library_600x900.jpg",
-        "localHeroImages": "/home/deck/Games/.images/${title}/library_hero.jpg",
-        "localLogoImages": "/home/deck/Games/.images/${title}/logo.png",
-        "localIcons": "/home/deck/Games/.images/${title}/icon.ico",
         "userAccounts": {
-            "specifiedAccounts": "",
-            "skipWithMissingDataDir": true,
-            "useCredentials": true
+            "specifiedAccounts": ""
         },
         "executable": {
             "path": "",
@@ -49,7 +37,7 @@
             "removeBrackets": true
         },
         "parserId": "164882672332884104",
-        "version": 10,
+        "version": 15,
         "imageProviderAPIs": {
             "SteamGridDB": {
                 "nsfw": false,
@@ -62,7 +50,32 @@
                 "stylesLogo": [],
                 "stylesIcon": []
             }
-        }
+        },
+        "controllers": {
+            "ps4": null,
+            "ps5": null,
+            "xbox360": null,
+            "xboxone": null,
+            "switch_joycon_left": null,
+            "switch_joycon_right": null,
+            "switch_pro": null,
+            "neptune": null
+        },
+        "defaultImage": {
+            "long": "",
+            "tall": "",
+            "hero": "",
+            "logo": "",
+            "icon": ""
+        },
+        "localImages": {
+            "long": "/home/deck/Games/.images/${title}/header.jpg",
+            "tall": "/home/deck/Games/.images/${title}/library_600x900.jpg",
+            "hero": "/home/deck/Games/.images/${title}/library_hero.jpg",
+            "logo": "/home/deck/Games/.images/${title}/logo.png",
+            "icon": "/home/deck/Games/.images/${title}/icon.ico"
+        },
+        "disabled": false
     },
     {
         "parserType": "Glob",
@@ -79,16 +92,6 @@
         "titleModifier": "${fuzzyTitle}",
         "onlineImageQueries": "${${fuzzyTitle}}",
         "imagePool": "${fuzzyTitle}",
-        "defaultImage": "",
-        "defaultTallImage": "",
-        "defaultHeroImage": "",
-        "defaultLogoImage": "",
-        "defaultIcon": "",
-        "localImages": "/home/deck/Games/.images/${title}/header.jpg",
-        "localTallImages": "/home/deck/Games/.images/${title}/library_600x900.jpg",
-        "localHeroImages": "/home/deck/Games/.images/${title}/library_hero.jpg",
-        "localLogoImages": "/home/deck/Games/.images/${title}/logo.png",
-        "localIcons": "/home/deck/Games/.images/${title}/icon.ico",
         "disabled": false,
         "executable": {
             "path": "",
@@ -96,9 +99,7 @@
             "appendArgsToExecutable": true
         },
         "userAccounts": {
-            "specifiedAccounts": "",
-            "skipWithMissingDataDir": true,
-            "useCredentials": true
+            "specifiedAccounts": ""
         },
         "parserInputs": {
             "glob": "**/${title}@(.sh)"
@@ -115,7 +116,7 @@
             "removeBrackets": true
         },
         "parserId": "165175551262813248",
-        "version": 10,
+        "version": 15,
         "imageProviderAPIs": {
             "SteamGridDB": {
                 "nsfw": false,
@@ -128,6 +129,30 @@
                 "stylesLogo": [],
                 "stylesIcon": []
             }
+        },
+        "controllers": {
+            "ps4": null,
+            "ps5": null,
+            "xbox360": null,
+            "xboxone": null,
+            "switch_joycon_left": null,
+            "switch_joycon_right": null,
+            "switch_pro": null,
+            "neptune": null
+        },
+        "defaultImage": {
+            "long": "",
+            "tall": "",
+            "hero": "",
+            "logo": "",
+            "icon": ""
+        },
+        "localImages": {
+            "long": "/home/deck/Games/.images/${title}/header.jpg",
+            "tall": "/home/deck/Games/.images/${title}/library_600x900.jpg",
+            "hero": "/home/deck/Games/.images/${title}/library_hero.jpg",
+            "logo": "/home/deck/Games/.images/${title}/logo.png",
+            "icon": "/home/deck/Games/.images/${title}/icon.ico"
         }
     },
     {
@@ -145,20 +170,8 @@
         ],
         "onlineImageQueries": "${${fuzzyTitle}}",
         "imagePool": "${fuzzyTitle}",
-        "defaultImage": "",
-        "defaultTallImage": "",
-        "defaultHeroImage": "",
-        "defaultLogoImage": "",
-        "defaultIcon": "",
-        "localImages": "",
-        "localTallImages": "",
-        "localHeroImages": "",
-        "localLogoImages": "",
-        "localIcons": "",
         "userAccounts": {
-            "specifiedAccounts": "",
-            "skipWithMissingDataDir": true,
-            "useCredentials": true
+            "specifiedAccounts": ""
         },
         "executable": {
             "path": "",
@@ -193,6 +206,31 @@
             }
         },
         "parserId": "16585866433194592",
-        "version": 10
+        "version": 15,
+        "controllers": {
+            "ps4": null,
+            "ps5": null,
+            "xbox360": null,
+            "xboxone": null,
+            "switch_joycon_left": null,
+            "switch_joycon_right": null,
+            "switch_pro": null,
+            "neptune": null
+        },
+        "defaultImage": {
+            "long": "",
+            "tall": "",
+            "hero": "",
+            "logo": "",
+            "icon": ""
+        },
+        "localImages": {
+            "long": "",
+            "tall": "",
+            "hero": "",
+            "logo": "",
+            "icon": ""
+        },
+        "disabled": false
     }
 ]
