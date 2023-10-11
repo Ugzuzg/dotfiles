@@ -1,12 +1,13 @@
 // by Ugzuzg
-// License: GPLv3
 // Install:
 // mkdir -p ~/.local/share/gnome-shell/extensions/keyboard@ugzuzg
 // cp ./extension.js ./metadata.json ~/.local/share/gnome-shell/extensions/keyboard@ugzuzg
 // Usage:
 // gdbus call --session --dest org.gnome.Shell --object-path /org/gnome/Shell/Extensions/InputSources --method org.gnome.Shell.Extensions.InputSources.Call 0
 
-const { Gio } = imports.gi;
+import { Extension } from "resource:///org/gnome/shell/extensions/extension.js";
+import Gio from "gi://Gio";
+import * as Keyboard from "resource:///org/gnome/shell/ui/status/keyboard.js";
 
 const MR_DBUS_IFACE = `
 <node>
@@ -17,23 +18,24 @@ const MR_DBUS_IFACE = `
     </interface>
 </node>`;
 
-class Extension {
-    enable() {
-        this._dbus = Gio.DBusExportedObject.wrapJSObject(MR_DBUS_IFACE, this);
-        this._dbus.export(Gio.DBus.session, '/org/gnome/Shell/Extensions/InputSources');
-    }
+class InputSourcesExtension extends Extension {
+  enable() {
+    this._dbus = Gio.DBusExportedObject.wrapJSObject(MR_DBUS_IFACE, this);
+    this._dbus.export(
+      Gio.DBus.session,
+      "/org/gnome/Shell/Extensions/InputSources"
+    );
+  }
 
-    disable() {
-        this._dbus.flush();
-        this._dbus.unexport();
-        delete this._dbus;
-    }
+  disable() {
+    this._dbus.flush();
+    this._dbus.unexport();
+    delete this._dbus;
+  }
 
-    Call(layoutIndex) {
-        imports.ui.status.keyboard.getInputSourceManager().inputSources[layoutIndex].activate()
-    }
+  Call(layoutIndex) {
+    Keyboard.getInputSourceManager().inputSources[layoutIndex].activate();
+  }
 }
 
-function init() {
-    return new Extension();
-}
+export default InputSourcesExtension;
