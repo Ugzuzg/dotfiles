@@ -1,0 +1,29 @@
+import = ["/home/ugzuzg/.config/alacritty/zenburn.toml"]
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[font]
+size = 10.0
+
+[font.bold]
+family = "SauceCodePro NF"
+style = "Bold"
+
+[font.bold_italic]
+family = "SauceCodePro NF"
+style = "Bold Italic"
+
+[font.italic]
+family = "SauceCodePro NF"
+style = "Italic"
+
+[font.normal]
+family = "SauceCodePro NF"
+
+[shell]
+program = "/bin/zsh"
+
+[window.dimensions]
+columns = 160
+lines = 40

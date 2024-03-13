@@ -6,8 +6,8 @@
 "zsh/.zshenv" = "~/.zshenv"
 
 [alacritty.files]
-"alacritty/alacritty.yml" = "~/.config/alacritty/alacritty.yml"
-"alacritty/schemes.yml" = "~/.config/alacritty/schemes.yml"
+"alacritty/alacritty.toml" = "~/.config/alacritty/alacritty.toml"
+"alacritty/zenburn.toml" = "~/.config/alacritty/zenburn.toml"
 
 [gnome.files]
 "gnome/autostart/unlock-keyring.desktop" = "~/.config/autostart/unlock-keyring.desktop"
