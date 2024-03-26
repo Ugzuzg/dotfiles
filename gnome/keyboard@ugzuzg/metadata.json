@@ -2,5 +2,5 @@
   "name": "Keyboard Layout switcher",
   "description": "Move and resize windows",
   "uuid": "keyboard@ugzuzg",
-  "shell-version": ["45"]
+  "shell-version": ["45", "46"]
 }
