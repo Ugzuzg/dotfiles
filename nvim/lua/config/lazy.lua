@@ -16,29 +16,6 @@ require("lazy").setup({
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
     { import = "plugins" },
-    { import = "lazyvim.plugins.extras.dap.core" },
-    { import = "lazyvim.plugins.extras.linting.eslint" },
-    { import = "lazyvim.plugins.extras.formatting.prettier" },
-    { import = "lazyvim.plugins.extras.coding.copilot" },
-    {
-      import = "lazyvim.plugins.extras.util.mini-hipatterns",
-      opts = function()
-        local hi = require("mini.hipatterns")
-        return {
-          -- custom LazyVim option to enable the tailwind integration
-          tailwind = {
-            enabled = true,
-            ft = { "typescriptreact", "javascriptreact", "css", "javascript", "typescript", "html" },
-            -- full: the whole css class will be highlighted
-            -- compact: only the color will be highlighted
-            style = "full",
-          },
-          highlighters = {
-            hex_color = hi.gen_highlighter.hex_color({ priority = 2000 }),
-          },
-        }
-      end,
-    },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
@@ -49,7 +26,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  install = { colorscheme = { "zenburn" } },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {
