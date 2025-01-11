@@ -8,28 +8,16 @@ sudo pacman-key --populate holo
 
 #sudo sed -i -E 's/\[(jupiter|holo|core|extra|community|multilib)-rel\]/[\1-main]/g' /etc/pacman.conf
 
-if ! grep -qe "heftig" /etc/pacman.conf; then
-	cat <<EOF | sudo tee -a /etc/pacman.conf
-
-[heftig]
-SigLevel = Optional
-Server = https://pkgbuild.com/~heftig/repo/\$arch
-EOF
-fi
-
 paru -Sy --noconfirm archlinux-keyring
 # paru -S --noconfirm openssl openssl-1.1 --overwrite '*'
 
 paru -S --noconfirm --needed --overwrite '*' \
-	zsh zoxide bat tmux base-devel glibc eza \
-	rustup \
+	zsh zoxide bat zellij base-devel glibc linux-api-headers nodejs npm \
 	lib32-freetype2 \
-	fakeroot p7zip unrar \
+	fakeroot unrar \
 	antigen \
-	lutris \
 	neovim \
-	dotter-rs-bin \
-	firefox-nightly
+	dotter-rs-bin
 
 sudo usermod -s /bin/zsh deck
 
@@ -38,10 +26,10 @@ sudo usermod -s /bin/zsh deck
 # Install flatpaks
 flatpak install --noninteractive --or-update flathub \
 	`# Apps` \
+	net.lutris.Lutris \
 	com.bitwarden.desktop \
 	com.discordapp.Discord \
 	com.github.iwalton3.jellyfin-media-player \
 	com.steamgriddb.steam-rom-manager \
 	com.github.tchx84.Flatseal \
-	net.davidotek.pupgui2 \
-	org.gnome.Platform.Compat.i386//43
+	net.davidotek.pupgui2

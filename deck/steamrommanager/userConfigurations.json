@@ -10,7 +10,8 @@
         "startInDirectory": "",
         "titleModifier": "${fuzzyTitle}",
         "imageProviders": [
-            "SteamGridDB"
+            "sgdb",
+            "steamCDN"
         ],
         "onlineImageQueries": "${${fuzzyTitle}}",
         "imagePool": "${fuzzyTitle}",
@@ -37,9 +38,9 @@
             "removeBrackets": true
         },
         "parserId": "164882672332884104",
-        "version": 15,
+        "version": 18,
         "imageProviderAPIs": {
-            "SteamGridDB": {
+            "sgdb": {
                 "nsfw": false,
                 "humor": false,
                 "imageMotionTypes": [
@@ -75,7 +76,9 @@
             "logo": "/home/deck/Games/.images/${title}/logo.png",
             "icon": "/home/deck/Games/.images/${title}/icon.ico"
         },
-        "disabled": false
+        "disabled": false,
+        "steamInputEnabled": "1",
+        "drmProtect": false
     },
     {
         "parserType": "Glob",
@@ -87,7 +90,8 @@
         "steamDirectory": "${steamdirglobal}",
         "startInDirectory": "",
         "imageProviders": [
-            "SteamGridDB"
+            "sgdb",
+            "steamCDN"
         ],
         "titleModifier": "${fuzzyTitle}",
         "onlineImageQueries": "${${fuzzyTitle}}",
@@ -116,9 +120,9 @@
             "removeBrackets": true
         },
         "parserId": "165175551262813248",
-        "version": 15,
+        "version": 18,
         "imageProviderAPIs": {
-            "SteamGridDB": {
+            "sgdb": {
                 "nsfw": false,
                 "humor": false,
                 "imageMotionTypes": [
@@ -153,20 +157,23 @@
             "hero": "/home/deck/Games/.images/${title}/library_hero.jpg",
             "logo": "/home/deck/Games/.images/${title}/logo.png",
             "icon": "/home/deck/Games/.images/${title}/icon.ico"
-        }
+        },
+        "steamInputEnabled": "1",
+        "drmProtect": false
     },
     {
         "parserType": "itch.io",
         "configTitle": "itch.io",
-        "steamCategory": "${itch}",
         "steamDirectory": "/home/deck/.steam/steam",
+        "steamCategory": "${itch}",
         "romDirectory": "",
         "executableArgs": "",
         "executableModifier": "\"${exePath}\"",
         "startInDirectory": "",
         "titleModifier": "${fuzzyTitle}",
         "imageProviders": [
-            "SteamGridDB"
+            "sgdb",
+            "steamCDN"
         ],
         "onlineImageQueries": "${${fuzzyTitle}}",
         "imagePool": "${fuzzyTitle}",
@@ -179,7 +186,8 @@
             "appendArgsToExecutable": true
         },
         "parserInputs": {
-            "itchIoAppDataOverride": null
+            "itchIoAppDataOverride": null,
+            "itchIoWindowsOnLinuxInstallDriveRedirect": null
         },
         "titleFromVariable": {
             "limitToGroups": "",
@@ -192,21 +200,6 @@
             "removeCharacters": true,
             "removeBrackets": true
         },
-        "imageProviderAPIs": {
-            "SteamGridDB": {
-                "nsfw": false,
-                "humor": false,
-                "styles": [],
-                "stylesHero": [],
-                "stylesLogo": [],
-                "stylesIcon": [],
-                "imageMotionTypes": [
-                    "static"
-                ]
-            }
-        },
-        "parserId": "16585866433194592",
-        "version": 15,
         "controllers": {
             "ps4": null,
             "ps5": null,
@@ -217,20 +210,37 @@
             "switch_pro": null,
             "neptune": null
         },
+        "imageProviderAPIs": {
+            "sgdb": {
+                "nsfw": false,
+                "humor": false,
+                "styles": [],
+                "stylesHero": [],
+                "stylesLogo": [],
+                "stylesIcon": [],
+                "imageMotionTypes": [
+                    "static",
+                    "animated"
+                ]
+            }
+        },
         "defaultImage": {
-            "long": "",
             "tall": "",
+            "long": "",
             "hero": "",
             "logo": "",
             "icon": ""
         },
         "localImages": {
-            "long": "",
             "tall": "",
+            "long": "",
             "hero": "",
             "logo": "",
             "icon": ""
         },
-        "disabled": false
+        "parserId": "16585866433194592",
+        "version": 18,
+        "steamInputEnabled": "1",
+        "drmProtect": false
     }
 ]
