@@ -1,3 +1,3 @@
 #!/usr/bin/bash
 
-env -u LD_PRELOAD konsole --fullscreen --notransparency
+exec env -u LD_PRELOAD konsole --fullscreen --notransparency

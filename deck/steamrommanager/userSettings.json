@@ -1,8 +1,8 @@
 {
 	"fuzzyMatcher": {
 		"timestamps": {
-			"check": 1716815749418,
-			"download": 1716815749418
+			"check": 1736594995011,
+			"download": 1736594995011
 		},
 		"verbose": false,
 		"filterProviders": true
@@ -13,22 +13,30 @@
 		"raCoresDirectory": "/home/deck/.steam/steam/steamapps/common/RetroArch/cores",
 		"localImagesDirectory": "/home/deck/Games/.images",
 		"romsDirectory": "",
-		"userAccounts": ""
+		"userAccounts": []
 	},
 	"previewSettings": {
+		"imageLoadStrategy": "loadLazy",
 		"retrieveCurrentSteamImages": true,
+		"disableCategories": false,
 		"deleteDisabledShortcuts": false,
 		"imageZoomPercentage": 30,
-		"preload": false
+		"hideUserAccount": false
 	},
 	"enabledProviders": [
-		"SteamGridDB"
+		"sgdb",
+		"steamCDN"
 	],
 	"language": "en-US",
 	"offlineMode": false,
 	"navigationWidth": 229,
 	"clearLogOnTest": false,
-	"version": 6,
+	"version": 10,
 	"theme": "Deck",
-	"batchDownloadSize": 50
+	"batchDownloadSize": 50,
+	"dnsServers": [],
+	"emudeckInstall": false,
+	"autoUpdate": true,
+	"autoKillSteam": false,
+	"autoRestartSteam": false
 }

@@ -1,3 +1,3 @@
 #!/usr/bin/bash
 
-/usr/bin/itch
+exec flatpak run io.itch.itch

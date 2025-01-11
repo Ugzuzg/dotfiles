@@ -54,3 +54,4 @@ depends = ["steamrommanager"]
 "deck/Tools/Itch.sh" = "~/Games/.bin/Tools/Itch.sh"
 "deck/Tools/SteamRomManager.sh" = "~/Games/.bin/Tools/SteamRomManager.sh"
 "deck/Tools/Konsole.sh" = "~/Games/.bin/Tools/Konsole.sh"
+"deck/Tools/Lutris.sh" = "~/Games/.bin/Tools/Lutris.sh"

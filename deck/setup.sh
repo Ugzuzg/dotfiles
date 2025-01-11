@@ -12,24 +12,25 @@ paru -Sy --noconfirm archlinux-keyring
 # paru -S --noconfirm openssl openssl-1.1 --overwrite '*'
 
 paru -S --noconfirm --needed --overwrite '*' \
-	zsh zoxide bat zellij base-devel glibc linux-api-headers nodejs npm \
-	lib32-freetype2 \
-	fakeroot unrar \
-	antigen \
-	neovim \
-	dotter-rs-bin
+  zsh zoxide bat zellij base-devel glibc linux-api-headers \
+  lib32-freetype2 \
+  fakeroot unrar \
+  antigen eza vifm \
+  neovim \
+  dotter-rs-bin
 
 sudo usermod -s /bin/zsh deck
 
 #sudo steamos-readonly enable
 
 # Install flatpaks
-flatpak install --noninteractive --or-update flathub \
-	`# Apps` \
-	net.lutris.Lutris \
-	com.bitwarden.desktop \
-	com.discordapp.Discord \
-	com.github.iwalton3.jellyfin-media-player \
-	com.steamgriddb.steam-rom-manager \
-	com.github.tchx84.Flatseal \
-	net.davidotek.pupgui2
+flatpak install --system --noninteractive --or-update flathub \
+  `# Apps` \
+  net.lutris.Lutris \
+  io.itch.itch \
+  com.bitwarden.desktop \
+  com.discordapp.Discord \
+  com.github.iwalton3.jellyfin-media-player \
+  com.steamgriddb.steam-rom-manager \
+  com.github.tchx84.Flatseal \
+  net.davidotek.pupgui2
