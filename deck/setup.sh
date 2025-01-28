@@ -16,7 +16,7 @@ paru -S --noconfirm --needed --overwrite '*' \
   lib32-freetype2 \
   fakeroot unrar \
   antigen eza vifm \
-  neovim \
+  neovim fzf \
   dotter-rs-bin
 
 sudo usermod -s /bin/zsh deck
