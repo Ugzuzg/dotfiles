@@ -5,3 +5,5 @@
 local opt = vim.opt
 
 opt.clipboard = ""
+
+vim.g.snacks_animate = false

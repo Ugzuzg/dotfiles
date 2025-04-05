@@ -53,3 +53,5 @@ fi
 if command -v helm &> /dev/null ; then
   source <(helm completion zsh)
 fi
+
+eval "$(zellij setup --generate-auto-start zsh)"
