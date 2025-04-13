@@ -1,0 +1,20 @@
+getantidote/use-omz # handle OMZ dependencies
+ohmyzsh/ohmyzsh path:lib
+ohmyzsh/ohmyzsh path:plugins/git
+
+ohmyzsh/ohmyzsh path:plugins/archlinux
+
+ohmyzsh/ohmyzsh path:plugins/node
+ohmyzsh/ohmyzsh path:plugins/npm
+ohmyzsh/ohmyzsh path:plugins/fnm
+
+ohmyzsh/ohmyzsh path:plugins/zoxide
+
+ohmyzsh/ohmyzsh path:plugins/kubectl
+ohmyzsh/ohmyzsh path:plugins/helm
+ohmyzsh/ohmyzsh path:plugins/kube-ps1
+
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-autosuggestions
+
+ohmyzsh/ohmyzsh path:themes/wezm+.zsh-theme

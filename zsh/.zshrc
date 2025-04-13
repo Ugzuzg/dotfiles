@@ -1,57 +1,38 @@
-source /usr/share/zsh/share/antigen.zsh
+ZFUNCDIR=${ZDOTDIR:-$HOME}/functions
+fpath=($ZFUNCDIR $fpath)
+autoload -Uz $fpath[1]/*(D@:t)
 
-antigen use oh-my-zsh
-
-antigen bundle git
-
-antigen bundle pep8
-antigen bundle pip
-
-antigen bundle adb
-
-antigen bundle archlinux
-
-antigen bundle node
-antigen bundle npm
-antigen bundle yarn
-
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zaw
-
-antigen theme wezm+
-
-antigen apply
+if [[ ! -d ${ZDOTDIR:-$HOME}/.antidote ]]; then
+  git clone https://github.com/mattmc3/antidote ${ZDOTDIR:-$HOME}/.antidote
+fi
+source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
+antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
 
 # setopt extended_glob
 
-alias ip='ip --color'
-alias diff='diff --color=auto'
-alias cat='bat'
-alias ls='eza'
-#alias cd='z'
+#PROMPT='$(kube_ps1)'$PROMPT
 
-export GPG_TTY=$(tty)
-
-compdef _pacman yay=pacman
 compdef _pacman paru=pacman
 
 # auto rehash on completion
 zstyle ':completion:*' rehash true
 zstyle ':completion::complete:*' gain-privileges 1
 
-if command -v fnm &> /dev/null ; then
+if (( $+commands[fnm] )); then
   eval "`fnm env --use-on-cd`"
 fi
-eval "$(zoxide init zsh)"
 
-if command -v kubectl &> /dev/null ; then
-  source <(kubectl completion zsh)
+if (( $+commands[jj] )); then
+  source <(jj util completion zsh)
 fi
 
-if command -v helm &> /dev/null ; then
-  source <(helm completion zsh)
-fi
 
 eval "$(zellij setup --generate-auto-start zsh)"
+
+for _rc in ${ZDOTDIR:-$HOME}/zshrc.d/*.zsh; do
+  # Ignore tilde files.
+  if [[ $_rc:t != '~'* ]]; then
+    source "$_rc"
+  fi
+done
+unset _rc

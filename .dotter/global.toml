@@ -2,8 +2,11 @@
 "git/.gitconfig" = "~/.gitconfig"
 
 [zsh.files]
-"zsh/.zshrc" = "~/.zshrc"
 "zsh/.zshenv" = "~/.zshenv"
+"zsh/.zshrc" = "~/.config/zsh/.zshrc"
+"zsh/.zsh_plugins.txt" = "~/.config/zsh/.zsh_plugins.txt"
+"zsh/functions/dotenv.zsh" = "~/.config/zsh/functions/dotenv"
+"zsh/zshrc.d/aliases.zsh" = "~/.config/zsh/zshrc.d/aliases.zsh"
 
 [alacritty.files]
 "alacritty/alacritty.toml" = "~/.config/alacritty/alacritty.toml"
