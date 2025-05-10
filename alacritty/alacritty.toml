@@ -1,4 +1,3 @@
-import = ["/home/ugzuzg/.config/alacritty/zenburn.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = true
@@ -21,9 +20,14 @@ style = "Italic"
 [font.normal]
 family = "SauceCodePro NF"
 
-[shell]
+[terminal.shell]
 program = "/bin/zsh"
 
 [window.dimensions]
 columns = 160
 lines = 40
+
+[general]
+import = ["/home/ugzuzg/.config/alacritty/zenburn.toml"]
+
+[terminal]
