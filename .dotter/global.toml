@@ -3,10 +3,7 @@
 
 [zsh.files]
 "zsh/.zshenv" = "~/.zshenv"
-"zsh/.zshrc" = "~/.config/zsh/.zshrc"
-"zsh/.zsh_plugins.txt" = "~/.config/zsh/.zsh_plugins.txt"
-"zsh/functions/dotenv.zsh" = "~/.config/zsh/functions/dotenv"
-"zsh/zshrc.d/aliases.zsh" = "~/.config/zsh/zshrc.d/aliases.zsh"
+"zsh/config" = "~/.config/zsh"
 
 [alacritty.files]
 "alacritty/alacritty.toml" = "~/.config/alacritty/alacritty.toml"
@@ -23,9 +20,6 @@
 
 [vscode.files]
 "vscode/settings.json" = "~/.config/Code/User/settings.json"
-
-[htop.files]
-"htop/htoprc" = "~/.config/htop/htoprc"
 
 [paru.files]
 "paru/paru.conf" = "~/.config/paru/paru.conf"

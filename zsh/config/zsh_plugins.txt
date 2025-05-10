@@ -4,15 +4,18 @@ ohmyzsh/ohmyzsh path:plugins/git
 
 ohmyzsh/ohmyzsh path:plugins/archlinux
 
+ohmyzsh/ohmyzsh path:plugins/rust
+
 ohmyzsh/ohmyzsh path:plugins/node
 ohmyzsh/ohmyzsh path:plugins/npm
 ohmyzsh/ohmyzsh path:plugins/fnm
 
 ohmyzsh/ohmyzsh path:plugins/zoxide
+ohmyzsh/ohmyzsh path:plugins/eza
+ohmyzsh/ohmyzsh path:plugins/fzf
 
 ohmyzsh/ohmyzsh path:plugins/kubectl
 ohmyzsh/ohmyzsh path:plugins/helm
-ohmyzsh/ohmyzsh path:plugins/kube-ps1
 
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-autosuggestions

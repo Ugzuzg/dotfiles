@@ -6,11 +6,9 @@ if [[ ! -d ${ZDOTDIR:-$HOME}/.antidote ]]; then
   git clone https://github.com/mattmc3/antidote ${ZDOTDIR:-$HOME}/.antidote
 fi
 source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
-antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
+antidote load ${ZDOTDIR:-$HOME}/zsh_plugins.txt
 
 # setopt extended_glob
-
-#PROMPT='$(kube_ps1)'$PROMPT
 
 compdef _pacman paru=pacman
 
