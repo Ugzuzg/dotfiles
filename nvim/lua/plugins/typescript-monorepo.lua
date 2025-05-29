@@ -10,7 +10,7 @@ return {
     opts = {
       servers = {
         vtsls = {
-          root_dir = get_root_dir,
+          -- root_dir = get_root_dir,
           -- set the path to the node binary with pointer compression
           -- https://github.com/yioneko/vtsls/issues/136#issuecomment-1919246219
           settings = {
@@ -28,6 +28,7 @@ return {
     "nvim-neotest/neotest",
     dependencies = {
       "nvim-neotest/neotest-jest",
+      "nvim-neotest/nvim-nio",
     },
     opts = {
       adapters = {
