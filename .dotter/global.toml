@@ -27,8 +27,8 @@
 [nvim.files]
 "nvim" = "~/.config/nvim"
 
-[tmux.files]
-"tmux/tmux.conf" = { target = "~/.config/tmux/tmux.conf", type = "template" }
+[zellij.files]
+"zellij" = "~/.config/zellij"
 
 [volvo]
 depends = ["git"]
