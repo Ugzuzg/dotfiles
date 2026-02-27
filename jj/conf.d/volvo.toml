@@ -1,0 +1,5 @@
+--when.repositories = ["~/volvo", "/@home/ugzuzg/volvo"]
+
+[user]
+email = "jaraslau.viktorchyk@volvocars.com"
+name = "Jaraslau Viktorchyk"

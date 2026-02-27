@@ -1,0 +1,77 @@
+[user]
+name = "Jarasłaŭ Viktorčyk"
+email = "ugzuzg@gmail.com"
+
+[ui]
+diff-formatter = ["difft", "--color=always", "$left", "$right"]
+
+[signing]
+behavior = "own"
+backend = "gpg"
+
+[revset-aliases]
+'closest_bookmark(to)' = 'heads(::to & bookmarks())'
+'closest_pushable(to)' = 'heads(::to & mutable() & ~description(exact:"") & (~empty() | merges()))'
+#'closest_pushable(to)' = 'heads(::to & ~description(exact:"") & (~empty() | merges()))'
+ephemeral = 'description(exact:"") & empty()'
+
+[aliases]
+tug = [
+  "bookmark",
+  "move",
+  "--from",
+  "closest_bookmark(@)",
+  "--to",
+  "closest_pushable(@)",
+]
+to = ['util', 'exec', '--', 'sh', '-c', '''
+set -eux
+
+bookmark=$1
+commit=${2-}
+
+# default to latest non-ephemeral commit
+if [ -z "$commit" ]; then
+	commit=$(jj log --no-graph -T change_id -r '@ ~ ephemeral')
+	if [ -n "$commit" ]; then
+		# moving current commit, create a new one to preserve
+		# current position in the commit DAG
+		jj new
+	else
+		commit=@-
+	fi
+fi
+
+jj rebase --revisions "$commit" --insert-after "$bookmark"
+jj bookmark move --from "$bookmark" --to "$bookmark+"
+''', '']
+
+[git]
+private-commits = "description(glob:'private:*')"
+
+[fix.tools.eslint]
+command = ["npx", "eslint", "--fix", "--stdin-filename=$path"]
+patterns = [
+  "glob:'**/*.ts'",
+  "glob:'**/*.tsx'",
+  "glob:'**/*.mts'",
+  "glob:'**/*.js'",
+  "glob:'**/*.jsx'",
+  "glob:'**/*.mjs'",
+]
+
+[fix.tools.prettier]
+command = ["npx", "prettier", "--stdin-filepath=$path"]
+patterns = [
+  "glob:'**/*.ts'",
+  "glob:'**/*.tsx'",
+  "glob:'**/*.mts'",
+  "glob:'**/*.js'",
+  "glob:'**/*.jsx'",
+  "glob:'**/*.mjs'",
+  "glob:'**/*.graphql'",
+  "glob:'**/*.json'",
+  "glob:'**/*.yml'",
+  "glob:'**/*.yaml'",
+  "glob:'**/*.md'",
+]

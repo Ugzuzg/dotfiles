@@ -1,6 +1,9 @@
 [git.files]
 "git/.gitconfig" = "~/.gitconfig"
 
+[jj.files]
+"jj/config.toml" = "~/.config/jj/config.toml"
+
 [zsh.files]
 "zsh/.zshenv" = "~/.zshenv"
 "zsh/config" = "~/.config/zsh"
@@ -31,10 +34,11 @@
 "zellij" = "~/.config/zellij"
 
 [volvo]
-depends = ["git"]
+depends = ["git", "jj"]
 
 [volvo.files]
 "git/volvo/.gitconfig" = "~/volvo/.gitconfig"
+"jj/conf.d/volvo.toml" = "~/.config/jj/conf.d/volvo.toml"
 
 [steamrommanager.files]
 "deck/steamrommanager/userConfigurations.json" = "~/.config/steam-rom-manager/userData/userConfigurations.json"
