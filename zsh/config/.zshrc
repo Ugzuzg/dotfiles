@@ -21,11 +21,13 @@ if (( $+commands[fnm] )); then
 fi
 
 if (( $+commands[jj] )); then
-  source <(jj util completion zsh)
+  source <(COMPLETE=zsh jj)
 fi
 
 
-eval "$(zellij setup --generate-auto-start zsh)"
+if [ "$TERM_PROGRAM" != "vscode" ]; then
+  eval "$(zellij setup --generate-auto-start zsh)"
+fi
 
 for _rc in ${ZDOTDIR:-$HOME}/zshrc.d/*.zsh; do
   # Ignore tilde files.

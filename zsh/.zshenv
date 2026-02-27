@@ -4,7 +4,7 @@ export EDITOR=nvim
 export BROWSER=firefox-nightly
 export DOCKER_BUILDKIT=1
 export COMPOSE_DOCKER_CLI_BUILD=1
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
 
 #alacritty-theme() {
 #  if [ ! -f ~/.config/alacritty/schemes.yml ]; then
