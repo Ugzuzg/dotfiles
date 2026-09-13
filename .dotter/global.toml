@@ -57,3 +57,20 @@ depends = ["steamrommanager"]
 "deck/Tools/Konsole.sh" = "~/Games/.bin/Tools/Konsole.sh"
 "deck/Tools/Lutris.sh" = "~/Games/.bin/Tools/Lutris.sh"
 "deck/Tools/Komga.sh" = "~/Games/.bin/Tools/Komga.sh"
+
+[elephant.files]
+"elephant/elephant.service" = "~/.config/systemd/user/elephant.service"
+
+[walker]
+depends = ["elephant"]
+
+[walker.files]
+"walker/walker.service" = "~/.config/systemd/user/walker.service"
+
+[kompass.files]
+"kompass/kompass.service" = "~/.config/systemd/user/kompass.service"
+
+[niri]
+depends = ["walker", "kompass"]
+[niri.files]
+"niri/config.kdl" = "~/.config/niri/config.kdl"
