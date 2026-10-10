@@ -1,6 +1,7 @@
 getantidote/use-omz # handle OMZ dependencies
 ohmyzsh/ohmyzsh path:lib
 ohmyzsh/ohmyzsh path:plugins/git
+ohmyzsh/ohmyzsh path:plugins/jj
 
 ohmyzsh/ohmyzsh path:plugins/archlinux
 
@@ -17,6 +18,7 @@ ohmyzsh/ohmyzsh path:plugins/fzf
 ohmyzsh/ohmyzsh path:plugins/kubectl
 ohmyzsh/ohmyzsh path:plugins/helm
 
+mafredri/zsh-async
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-autosuggestions
 

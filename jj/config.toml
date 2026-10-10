@@ -9,6 +9,23 @@ diff-formatter = ["difft", "--width=$width", "--color=always", "$left", "$right"
 behavior = "own"
 backend = "gpg"
 
+[template-aliases]
+prompt = '''
+separate(" ",
+  format_short_change_id_with_change_offset(self),
+  format_short_commit_id(commit_id),
+  if(empty, label("empty", "(empty)"), ""),
+  if(description == "", label("description placeholder", "(no description)"), ""),
+  if(description.starts_with("wip"), label("wip", "(wip)"), ""),
+  if(description.starts_with("todo"), label("todo", "(todo)"), ""),
+  if(conflict, label("conflict", "(conflict)"), "")
+)
+'''
+
+[colors]
+wip = "yellow"
+todo = "blue"
+
 [revset-aliases]
 'closest_bookmark(to)' = 'heads(::to & bookmarks())'
 'closest_pushable(to)' = 'heads(::to & mutable() & ~description(exact:"") & (~empty() | merges()))'
