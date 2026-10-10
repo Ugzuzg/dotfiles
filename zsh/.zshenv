@@ -5,6 +5,7 @@ export BROWSER=firefox-nightly
 export DOCKER_BUILDKIT=1
 export COMPOSE_DOCKER_CLI_BUILD=1
 export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
+export PI_CODING_AGENT_DIR="$HOME/.config/pi"
 
 #alacritty-theme() {
 #  if [ ! -f ~/.config/alacritty/schemes.yml ]; then

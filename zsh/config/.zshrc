@@ -36,3 +36,11 @@ for _rc in ${ZDOTDIR:-$HOME}/zshrc.d/*.zsh; do
   fi
 done
 unset _rc
+
+# pnpm
+export PNPM_HOME='/home/ugzuzg/.local/share/pnpm'
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
