@@ -52,16 +52,16 @@ typeset -g _wezm_jj_workspace=""
 # https://andre.arko.net/2025/06/20/a-jj-prompt-for-powerlevel10k/
 _wezm_jj_async() {
   local ws=$1 revision bookmark distance file_status display
-  revision=$(jj log --repository "$ws" --ignore-working-copy --no-graph --limit 1 \
+  revision=$(jj log --repository "$ws" --ignore-working-copy --at-op=@ --no-graph --limit 1 \
     --color always -r @ -T 'prompt' 2>/dev/null)
-  bookmark=$(jj log --repository "$ws" --ignore-working-copy --no-graph --limit 1 \
+  bookmark=$(jj log --repository "$ws" --ignore-working-copy --at-op=@ --no-graph --limit 1 \
     -r 'closest_bookmark(@)' -T 'bookmarks.map(|b| b.name()).join(" ")' 2>/dev/null)
   bookmark=${bookmark%% *}
-  distance=$(jj log --repository "$ws" --ignore-working-copy --no-graph --color never \
+  distance=$(jj log --repository "$ws" --ignore-working-copy --at-op=@ --no-graph --color never \
     -r 'closest_bookmark(@)..@ & (~empty() | merges())' -T '"n"' 2>/dev/null | wc -c | tr -d ' ')
   local ahead=0 behind=0 color=green counts
   if [[ -n $bookmark ]]; then
-    counts=($(jj bookmark list --repository "$ws" --ignore-working-copy "exact:$bookmark" \
+    counts=($(jj bookmark list --repository "$ws" --ignore-working-copy --at-op=@ "exact:$bookmark" \
       -T 'if(remote && remote != "git", separate(" ", tracking_ahead_count.lower(), tracking_behind_count.lower()) ++ "\n")' \
       2>/dev/null | head -1))
     ahead=${counts[1]:-0} behind=${counts[2]:-0}
@@ -69,7 +69,7 @@ _wezm_jj_async() {
     (( behind )) && color=magenta
     (( ahead && behind )) && color=red
   fi
-  file_status=$(jj log --repository "$ws" --ignore-working-copy --no-graph --color never \
+  file_status=$(jj log --repository "$ws" --ignore-working-copy --at-op=@ --no-graph --color never \
     -r @ -T 'self.diff().files().map(|f| f.status()).join("\n")' 2>/dev/null |
     sort | uniq -c | awk '
       /modified/ { p[++i] = "%F{cyan}±" $1 "%f" }
