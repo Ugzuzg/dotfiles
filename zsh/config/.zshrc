@@ -55,9 +55,20 @@ _wezm_jj_async() {
   revision=$(jj log --repository "$ws" --ignore-working-copy --no-graph --limit 1 \
     --color always -r @ -T 'prompt' 2>/dev/null)
   bookmark=$(jj log --repository "$ws" --ignore-working-copy --no-graph --limit 1 \
-    --color always -r 'closest_bookmark(@)' -T 'bookmarks.join(" ")' 2>/dev/null)
+    -r 'closest_bookmark(@)' -T 'bookmarks.map(|b| b.name()).join(" ")' 2>/dev/null)
+  bookmark=${bookmark%% *}
   distance=$(jj log --repository "$ws" --ignore-working-copy --no-graph --color never \
-    -r 'closest_bookmark(@)..@' -T 'change_id ++ "\n"' 2>/dev/null | wc -l | tr -d ' ')
+    -r 'closest_bookmark(@)..@ & (~empty() | merges())' -T '"n"' 2>/dev/null | wc -c | tr -d ' ')
+  local ahead=0 behind=0 color=green counts
+  if [[ -n $bookmark ]]; then
+    counts=($(jj bookmark list --repository "$ws" --ignore-working-copy "exact:$bookmark" \
+      -T 'if(remote && remote != "git", separate(" ", tracking_ahead_count.lower(), tracking_behind_count.lower()) ++ "\n")' \
+      2>/dev/null | head -1))
+    ahead=${counts[1]:-0} behind=${counts[2]:-0}
+    (( ahead )) && color=cyan
+    (( behind )) && color=magenta
+    (( ahead && behind )) && color=red
+  fi
   file_status=$(jj log --repository "$ws" --ignore-working-copy --no-graph --color never \
     -r @ -T 'self.diff().files().map(|f| f.status()).join("\n")' 2>/dev/null |
     sort | uniq -c | awk '
@@ -69,8 +80,11 @@ _wezm_jj_async() {
       END { for (j=1; j<=i; j++) printf "%s%s", p[j], (j<i ? " " : "") }')
   display=$revision
   if [[ -n $bookmark ]]; then
-    display+=" $bookmark"
-    (( distance > 0 )) && display+=" %7F⇡${distance}%f"
+    display+=" %F{$color}${bookmark}"
+    (( distance > 0 )) && display+="›${distance}"
+    (( behind )) && display+=" ⇣${behind}"
+    (( ahead )) && display+="$( (( behind )) || print -n ' ' )⇡${ahead}"
+    display+="%f"
   fi
   [[ -n $file_status ]] && display+=" $file_status"
   print -r -- "$display" | sed 's/\x1b\[[0-9;]*m/%{&%}/g'
