@@ -18,7 +18,10 @@ separate(" ",
   if(description == "", label("description placeholder", "(no description)"), ""),
   if(description.starts_with("wip"), label("wip", "(wip)"), ""),
   if(description.starts_with("todo"), label("todo", "(todo)"), ""),
-  if(conflict, label("conflict", "(conflict)"), "")
+  if(conflict, "💥"),
+  if(divergent, "🚧"),
+  if(hidden, "👻"),
+  if(immutable, "🔒"),
 )
 '''
 
